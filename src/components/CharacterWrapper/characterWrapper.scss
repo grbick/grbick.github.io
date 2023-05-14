@@ -1,3 +1,29 @@
 .characterWrapper{
-    
+    width: fit-content;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    h2{
+        align-self: center;
+    }
+    h4{
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+        border-radius: 5px;
+        padding: 10px;
+        text-transform: capitalize;
+        &.alive{
+            background-color: green;
+            color: white;
+        }
+        &.dead{
+            background-color: red;
+            color:white;
+        }
+        &.unknown{
+            background-color: yellow;
+        }
+    }
 }

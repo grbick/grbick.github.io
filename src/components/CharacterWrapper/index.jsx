@@ -20,9 +20,12 @@ const CharacterWrapper = ({selectedCharacter, loading, responseFail}) => {
     );
   return (
     <div className="characterWrapper">
-      <p>{selectedCharacter?.name}</p>
+      <h2>{selectedCharacter?.name}</h2>
       <img src={selectedCharacter?.image} alt="" />
-      <p>{selectedCharacter?.location.name}</p>
+      <h4 className={selectedCharacter?.status === 'Alive' ? 'alive': selectedCharacter?.status === 'Dead' ? 'dead': 'unknown'}>{selectedCharacter?.status}</h4>
+      <p><b>Gender: </b>{selectedCharacter?.gender}</p>
+      <p><b>Origin: </b>{selectedCharacter?.origin.name}</p>
+      <p><b>Species: </b>{selectedCharacter?.species}</p>
     </div>
   );
 };
