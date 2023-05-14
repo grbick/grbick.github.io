@@ -29,9 +29,6 @@ const CharPage = () => {
     fetchData();
   }, [id]);
 
-  console.log('render');
-
-
   return (
     <div className="charPage">
       <Header />
