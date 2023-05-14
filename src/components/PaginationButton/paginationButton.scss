@@ -1,0 +1,8 @@
+.paginationButton{
+    display: inline-block;
+    margin: 0 10px;
+    cursor: pointer;
+    &.active{
+        color: green;
+    }
+}
