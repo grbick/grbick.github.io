@@ -2,12 +2,12 @@ import React from "react";
 import "./App.scss";
 import CharPage from "./pages/CharPage";
 import HomePage from "./pages/HomePage";
-import {BrowserRouter,Routes,Route,Navigate} from "react-router-dom"
+import {HashRouter,Routes,Route,Navigate} from "react-router-dom"
 
 function App() {
   return (
     <div className="App">
-        <BrowserRouter>
+        <HashRouter>
         <Routes>
               <Route 
                 path={`/`}
@@ -17,7 +17,7 @@ function App() {
                 element={<CharPage />} />
               <Route path="*" element={<Navigate to={`/`}/>} replace/>
             </Routes>
-        </BrowserRouter>
+        </HashRouter>
       </div>
   );
 }
